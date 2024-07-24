@@ -300,20 +300,20 @@
 
 
 
-let cumle= "Yagish yagir yagir inanmiram yarim yarim gozleyer meni meni"
-let obj= {}
-let cumleSplit= cumle.split(" ")
-console.log(cumleSplit);
+// let cumle= "Yagish yagir yagir inanmiram yarim yarim gozleyer meni meni"
+// let obj= {}
+// let cumleSplit= cumle.split(" ")
+// console.log(cumleSplit);
 
-for (let i = 0; i < cumleSplit.length; i++) {
-    let soz= cumleSplit[i]
-    if (obj[soz]==undefined) {
-        obj[soz]=1
-    }else{
-        obj[soz]++
-    }
-}
-console.log(obj);
+// for (let i = 0; i < cumleSplit.length; i++) {
+//     let soz= cumleSplit[i]
+//     if (obj[soz]==undefined) {
+//         obj[soz]=1
+//     }else{
+//         obj[soz]++
+//     }
+// }
+// console.log(obj);
 
 
 
