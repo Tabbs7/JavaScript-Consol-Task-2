@@ -219,17 +219,15 @@
 
 
 
-// let metn= "yazilan bu metinde birin herif boyuk olmalidir"
+// let metn= "yazilan bu metinde birinci herif boyuk olmalidir. her bir cumlesi.";
 // let tezeMetin= birinciHerifBoyuk(metn);
 
 // function birinciHerifBoyuk(metn) {
-//     let cumleler= metn.split();
+//     let cumleler= metn.split(/([.!?]\s*)/);
 //     let tezeMetin= "";
-//     for (let i = 0; i < cumleler.length; i++) {
-//         if (i%2===0) {
-//         tezeMetin+= cumleler[i] .trim() .charAt(0) .toUpperCase()+ cumleler[i] .slice(1) .trim();
-//         }else{
-//             tezeMetin+= cumleler[i];
+//     for (let i= 0; i< cumleler.length; i++) {
+//         if (cumleler[i].length> 0) {
+//             tezeMetin+= cumleler[i] .charAt(0) .toUpperCase()+ cumleler[i] .slice(1);
 //         }
 //     }
 //     return tezeMetin;
@@ -302,20 +300,20 @@
 
 
 
-// let cumle= "Yagish yagir yagir inanmiram yarim yarim gozleyer meni meni"
-// let obj= {}
-// let cumleSplit= cumle.split(" ")
-// console.log(cumleSplit);
+let cumle= "Yagish yagir yagir inanmiram yarim yarim gozleyer meni meni"
+let obj= {}
+let cumleSplit= cumle.split(" ")
+console.log(cumleSplit);
 
-// for (let i = 0; i < cumleSplit.length; i++) {
-//     let soz= cumleSplit[i]
-//     if (obj[soz]==undefined) {
-//         obj[soz]=1
-//     }else{
-//         obj[soz]++
-//     }
-// }
-// console.log(obj);
+for (let i = 0; i < cumleSplit.length; i++) {
+    let soz= cumleSplit[i]
+    if (obj[soz]==undefined) {
+        obj[soz]=1
+    }else{
+        obj[soz]++
+    }
+}
+console.log(obj);
 
 
 
